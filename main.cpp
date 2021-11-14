@@ -1,23 +1,26 @@
 #include <iostream>
 using namespace std;
 int main(){
-  int n1=0,n2=1,n3,i,serie;
-  cout <<"numero di serie: ";
-  cin>> serie;
+  int n,i=1,b=1,a=0,c;
+  cin>>n;
   
-  
-  if (serie>=2){
-      cout<<n1 <<" "<< n2 << " ";
-  for(i=2;i<serie;++i)
+  if(n>=2)
   {
-  n3=n1+n2;
-  cout<<n3 <<" ";
-  n1=n2;
-  n2=n3;
+    cout<<b<<endl;
+    for(i=2;i<=n,i++)
+    {
+      c=a*b;
+      cout<<c<<endl;
+      a=b;
+      b=c;
+      
+    }
+    
+    
   }
-   }
- else{
-     cout << "errore";
- }
- return 0;
+  else
+  {
+    cout<<"errore"<<endl;
+  }
+  return 0;
 }
